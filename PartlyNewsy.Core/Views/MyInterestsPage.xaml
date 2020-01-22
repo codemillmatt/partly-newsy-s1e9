@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:PartlyNewsy.Core"
+    x:Class="PartlyNewsy.Core.MyInterestsPage"
+    BackgroundColor="#f2f2f2"
+    Shell.NavBarIsVisible="True">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="views:InterestsTile">
+                <Setter Property="FlexLayout.Basis"
+                        Value="33%" />
+            </Style>
+        </ResourceDictionary>
+
+        <StyleSheet>
+            <![CDATA[
+            InterestTile {
+                margin-bottom: 10;
+            }
+            ]]>
+        </StyleSheet>
+    </ContentPage.Resources>
+
+    <Shell.TitleView>
+        <StackLayout>
+            <Label Text="My Interests"
+                   TextColor="#171717"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   Margin="-10,14,0,0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+        </StackLayout>
+    </Shell.TitleView>
+
+    <ContentPage.Content>
+
+        <CollectionView x:Name="newsCategories" SelectionMode="Single"
+                        SelectionChanged="SelectionChanged">
+
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="3" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <views:InterestsTile />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+            <CollectionView.EmptyView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label                        
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="End"
+                        FontFamily="{StaticResource FabMDL2}"
+                        Text="&#xE900;"
+                        TextColor="Red"
+                        FontSize="64"
+                        Grid.Row="0"/>
+                    <Label
+                        Text="Please sign-in or create an account in order to save specific news categories as interests."                        
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Start"
+                        FontSize="18"                        
+                        Grid.Row="1"
+                        Margin="10,0,0,10"
+                        />
+                    <Button Text="Sign-In"
+                            Visual="Material"
+                            Margin="40,0,40,0"
+                            Grid.Row="2"
+                            VerticalOptions="Start"
+                            FontSize="18"
+                            Clicked="SignIn_Clicked"/>
+                    
+                </Grid>
+            </CollectionView.EmptyView>
+        </CollectionView>
+
+    </ContentPage.Content>
+</ContentPage>
