@@ -22,6 +22,10 @@
                 Android="FabMDL2.ttf#Fabric MDL2 Assets"
                 iOS="Fabric MDL2 Assets"
             />
+
+<Style TargetType="Switch">
+    <Setter Property="OnColor" Value="Black" />
+</Style>
             
         </ResourceDictionary>
     </Application.Resources>
