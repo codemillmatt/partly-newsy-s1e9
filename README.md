@@ -6,7 +6,7 @@ Go ahead and download all the code from [GitHub](https://github.com/codemillmatt
 
 In this episode we put the finishing touches to the app's user interface. It looked good before, but now it'll look even better!
 
-You'll learn all about [Xamarin.Forms Visual](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/visual/material-visual?WT.mc_id=partlycloudy-github-masoucou), how to change the home screen icons, tailor the splash screens to your exact specifications, and even play around with Xamarin.Forms styles. And for good measure, we'll dig down into the platform code to tweak some UI too!
+You'll learn all about [Xamarin.Forms Visual](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/visual/material-visual?WT.mc_id=mobile-0000-masoucou), how to change the home screen icons, tailor the splash screens to your exact specifications, and even play around with Xamarin.Forms styles. And for good measure, we'll dig down into the platform code to tweak some UI too!
 
 ### What are we going to do?
 
@@ -16,7 +16,7 @@ So we're going to learn how Visual makes life super easy by applying predefined 
 
 #### Xamarin.Forms Visual
 
-[Visual is an opinionated design framework](https://docs.microsoft.com/xamarin/android/user-interface/material-theme?WT.mc_id=partlycloudy-github-masoucou). That means somebody else has decided upon all the minute look and feel details, like padding and spacing and rounded corners for us.
+[Visual is an opinionated design framework](https://docs.microsoft.com/xamarin/android/user-interface/material-theme?WT.mc_id=mobile-0000-masoucou). That means somebody else has decided upon all the minute look and feel details, like padding and spacing and rounded corners for us.
 
 And one of the cool things that comes of using Visual in Xamarin.Forms, is the resulting UI looks very similar, if not exactly the same, between iOS and Android!
 
@@ -36,9 +36,9 @@ I think the "flatter" look that Visual provides is _much_ better.
 
 What's an app without a great splash screen?
 
-Well, we went through that in this episode too! On Android it was a bit of work, so be sure to check out the video and the [documentation](https://docs.microsoft.com/xamarin/android/user-interface/splash-screen?WT.mc_id=partlycloudy-github-masoucou).
+Well, we went through that in this episode too! On Android it was a bit of work, so be sure to check out the video and the [documentation](https://docs.microsoft.com/xamarin/android/user-interface/splash-screen?WT.mc_id=mobile-0000-masoucou).
 
-iOS - a bit easier, but we had to deal with [editing the NIB file directly](https://docs.microsoft.com/xamarin/ios/user-interface/storyboards?WT.mc_id=partlycloudy-github-masoucou).
+iOS - a bit easier, but we had to deal with [editing the NIB file directly](https://docs.microsoft.com/xamarin/ios/user-interface/storyboards?WT.mc_id=mobile-0000-masoucou).
 
 The end result though is pretty cool.
 
@@ -48,13 +48,13 @@ The end result though is pretty cool.
 
 We didn't get to implementing dark mode in the video. But I know everybody loves dark mode. So here are some links so you can do it. Put in a pull request and let's get it implemented into the app!
 
-* [Getting dark mode integrated into Xamarin.Forms](https://devblogs.microsoft.com/xamarin/modernizing-ios-apps-dark-mode-xamarin/?WT.mc_id=partlycloudy-github-masoucou)
-* [iOS dark mode specifics](https://docs.microsoft.com/xamarin/ios/platform/ios13/dark-mode?WT.mc_id=partlycloudy-github-masoucou)
-* [Android dark mode specifics](https://docs.microsoft.com/xamarin/android/platform/android-10?WT.mc_id=partlycloudy-github-masoucou#enhance-your-app-with-android-10-features-and-apis)
+* [Getting dark mode integrated into Xamarin.Forms](https://devblogs.microsoft.com/xamarin/modernizing-ios-apps-dark-mode-xamarin/?WT.mc_id=mobile-0000-masoucou)
+* [iOS dark mode specifics](https://docs.microsoft.com/xamarin/ios/platform/ios13/dark-mode?WT.mc_id=mobile-0000-masoucou)
+* [Android dark mode specifics](https://docs.microsoft.com/xamarin/android/platform/android-10?WT.mc_id=mobile-0000-masoucou#enhance-your-app-with-android-10-features-and-apis)
 
 #### Styling Away
 
-If you're going to do dark mode, you'll probably be making use of [Xamarin.Forms styles](https://docs.microsoft.com/xamarin/get-started/quickstarts/styling?WT.mc_id=partlycloudy-github-masoucou).
+If you're going to do dark mode, you'll probably be making use of [Xamarin.Forms styles](https://docs.microsoft.com/xamarin/get-started/quickstarts/styling?WT.mc_id=mobile-0000-masoucou).
 
 Styles is a great way to say: "Hey! I want this control to look the same everywhere, but I only want to define the look once!".
 
